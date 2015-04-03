@@ -10,6 +10,7 @@
     <properties>
         <spring.version>4.1.1.RELEASE</spring.version>
         <jackson.version>2.4.4</jackson.version>
+        <spring.mongo.data.version>1.5.2.RELEASE</spring.mongo.data.version>
     </properties>
 
     <dependencies>
@@ -27,16 +28,19 @@
 
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
         </dependency>
+
 
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
-            <artifactId>jsp-api</artifactId>
-            <version>2.1</version>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>2.3.1</version>
             <scope>provided</scope>
         </dependency>
+
+
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -48,6 +52,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+            <version>${spring.mongo.data.version}</version>
         </dependency>
 
         <dependency>

@@ -2,17 +2,16 @@ package com.springapp.mvc.convertors.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.springapp.mvc.convertors.FormatConvertor;
+import com.springapp.mvc.convertors.FormatConverter;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.List;
 
 /**
  * Created by abhayphougat on 28/03/15.
  */
-@Service
-public class DefaultJsonConvertor<V> implements FormatConvertor<String,V>{
+@Service("ObjectToJsonConverter")
+public class ObjectToJsonConverter<V> implements FormatConverter<String,V> {
 
 
     @Override
